@@ -13,3 +13,18 @@ navLinks.forEach(link => {
 
 		})
 })
+
+//Checkbox functions
+
+function myFunction() {
+
+$(document).ready(function () {
+    $('#python').change(function () {
+        if (this.checked) 
+        //  ^
+           $('#doommapper').fadeIn('slow');
+        else 
+            $('#doommapper').fadeOut('slow');
+    });
+});
+}
