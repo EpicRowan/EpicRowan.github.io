@@ -89,6 +89,7 @@ reg { font-weight: var(--fw-reg) }
 
 .btn:hover {
   transform: scale(1.2);
+  background-color:#9999ff;
 }
 
 /* Typography */
@@ -193,6 +194,7 @@ header {
   z-index: 1000;
 }
 
+.nav__toggle:hover { background-color: #9999ff; }
 
 .nav-open .nav {
   transform: translateX(0);
