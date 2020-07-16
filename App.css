@@ -92,6 +92,7 @@ reg { font-weight: var(--fw-reg) }
   background-color:#9999ff;
 }
 
+
 /* Typography */
 
 h1,
@@ -177,9 +178,6 @@ header {
   text-decoration: none;
 }
 
-.nav__link:hover {
-  color: var(--clr-accent);
-}
 
 
 .nav__toggle {
@@ -196,12 +194,15 @@ header {
 
 .nav__toggle:hover { background-color: #9999ff; }
 
+
 .nav-open .nav {
   transform: translateX(0);
+
 }
 
 .nav-open .nav-toggle {
   position: fixed;
+ 
 }
 
 .nav-open .hamburger {
@@ -215,6 +216,8 @@ header {
 .nav-open .hamburger::after {
   opacity: 0;
 }
+
+
 
 /* Hamburger */
 
@@ -549,3 +552,4 @@ footer a {
   margin-left: auto;
   margin-right: auto;
 }
+
