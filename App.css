@@ -140,6 +140,7 @@ header {
   height: 100px;
   background:var(--clr-dark);
   padding: 1em;
+  box-shadow:var(--bs);  
 }
 
 
@@ -178,8 +179,6 @@ header {
   text-decoration: none;
 }
 
-
-
 .nav__toggle {
   padding: 1.5em;
   background: var(--clr-accent);
@@ -194,6 +193,7 @@ header {
 
 .nav__toggle:hover { background-color: #9999ff; }
 
+.nav__link:hover { color: #16e0bd; }
 
 .nav-open .nav {
   transform: translateX(0);
