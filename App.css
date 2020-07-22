@@ -63,12 +63,10 @@ img {
 
 reg { font-weight: var(--fw-reg) }
 
-y { color: yellow; }
-
 
 @media(min-width: 1000px) {
   .coding {
-      display: block;
+    display: block;
 
   }
 }
@@ -118,6 +116,8 @@ regular { font-weight: var(--fw-reg) }
 
 .section__title {
   margin-bottom: .25em;
+  margin-right: .25em;
+  margin-top: 1em;
 }
 
 .section__title strong {
@@ -125,8 +125,8 @@ regular { font-weight: var(--fw-reg) }
 }
 
 
-.section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle,
+.section__subtitle__about-me {
   background: var(--clr-accent);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
@@ -182,9 +182,9 @@ header {
   align-items: center;
   margin: 0;
   padding: 0;
-  background: var(--clr-light);
+    background: var(--clr-light);
   color: var(--clr-dark);
-  font-weight: var(--fw-bold);
+    font-weight: var(--fw-bold);
   font-size: var(--fs-h3);
   border-left: 6px solid #9999ff;
   border-right: 6px solid #9999ff;
@@ -254,7 +254,7 @@ header {
 
 
 
-/* Hamburger button*/
+/* Hamburger */
 
 .hamburger {
   display: block;
@@ -304,16 +304,8 @@ header {
   }
 }
 
-.section__title {
-  margin:0;
-  margin-top: 70px;
-  padding: 0;
-  align-self: start;
-}
-
 .section__subtitle {
   margin:0;
-  margin-top: :0;
   font-size: var(--fs-h3);
   background: var(--clr-accent);
   font-family: var(--ff-secondary);
@@ -325,7 +317,7 @@ header {
   position: relative;
   left: -1.5em;
   width:calc(100% +2em);
-  padding:.5em 1em;
+  padding:1em 1em;
 }
 
 
@@ -333,8 +325,8 @@ header {
 
 .intro-image {
   grid-area: img;
-  min-width: 300px;
-  max-width: 350px;
+  min-width: 250px;
+  max-width: 320px;
   position: relative;
   z-index: 2;
   box-shadow:var(--bs);
@@ -375,12 +367,6 @@ header {
 
  }
 
- .coding_subtitle {
-  font-weight: bold;
-   margin: 0.5 auto 1em;
- }
-
-
 .coding {
    margin-bottom: 2em;
   }
@@ -388,7 +374,7 @@ header {
 @media (min-width: 800px) {
   .coding_paragraphs {
     display: flex;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
@@ -414,15 +400,17 @@ header {
 .about-me_title {
   grid-area: title;
   text-align: left;
-  font-weight:var(--fw-bold)
+  font-weight:var(--fw-bold);
+   margin: .5em;
+   margin-top: 1em;
 
 
 }
 
 .about_me_pic {
   grid-area: img;
-  min-width: 300px;
-  max-width: 350px;
+  min-width: 320px;
+  max-width: 400px;
   position: relative;
   box-shadow:var(--bs);
   z-index: 2;
@@ -455,7 +443,7 @@ header {
   width:calc(100% +2em);
   padding:1em;
   padding-left:2em;
-  padding-right:calc(200px + 4em);
+  padding-right:calc(100px + 4em);
 }
 
 /*Projects section*/
@@ -502,12 +490,13 @@ header {
   }
 
 .portfolio_img {
-  min-width: 400px;
-  min-height: 400px;
-  transition: 
-  transform 750ms cubic-bezier(.5, 0, .5, 1);
-  opacity:  250ms linear;
-  padding: .25em;
+
+    min-width: 400px;
+    min-height: 400px;
+    transition: 
+    transform 750ms cubic-bezier(.5, 0, .5, 1);
+    opacity:  250ms linear;
+    padding: .25em;
 }
 
 .portfolio_img:focus {
@@ -539,6 +528,7 @@ header {
   font-size: var(--fs-h2);
   font-weight: var(--fw-bold);
   padding: .5em;
+
 
 }
 
@@ -620,8 +610,10 @@ footer a {
 }
 
 .section__title__porfolio {
+  font-weight: var(--fw-bold);
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
