@@ -402,14 +402,14 @@ header {
 
 .about-me__body {
   margin: 0 auto;
-  margin-top: -2em;
+  margin-top: -.5em;
 }
 
 .about-me_title {
   grid-area: title;
   text-align: left;
   font-weight:var(--fw-bold);
-  margin-top: 1em;
+  margin-top: 0;
 
 
 }
