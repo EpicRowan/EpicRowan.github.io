@@ -581,11 +581,12 @@ footer a {
   grid-area: img;
   min-width: 250px;
   max-width: 320px;
+  padding-bottom: 1em;
   position: relative;
   z-index: 2;
   box-shadow:var(--bs);
-}
 
+}
 
 .portfolio-item-individual {
   text-align: center;
@@ -593,6 +594,17 @@ footer a {
   padding: 0 2em 2em;
   max-width: 1000px
   margin 0 auto;
+}
+
+.portfolio_paragraph {
+  margin: 2em;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+}
+
+.portfolio_title {
+  margin-top: 1em;
+  font-weight: var(--fw-bold)
 }
 
 .additional-photos {
@@ -607,13 +619,13 @@ footer a {
   font-size: var(--fs-h3);
   background: var(--clr-accent);
   font-family: var(--ff-secondary);
-  height: 80px;
+  height: 130px;
   text-align: left;
   position: relative;
   padding:1em;
   padding-left:2em;
-  padding-right:calc(200px + 4em);
   width: 100%;
+  margin-bottom: 1em;
 }
 
 .section__title__porfolio {
